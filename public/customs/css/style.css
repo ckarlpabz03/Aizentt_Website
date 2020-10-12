@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+
+/* Navigation Header */
+.company-name {
+  font-size: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #007bff;
+  font-weight: bold;
+  letter-spacing: .15em;
+}
+.company_logo {
+  padding-right: 5px;
+}
+
+/* main content */
+.services,
+.portfolio,
+.contacts {
+  padding: 50px 0px 50px 0px;
+}
+.section-header h3 {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+.section-header h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-header h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #007bff;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-header p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+/* hometop */
+.carousel-image {
+  max-height: 750px;
+  filter: brightness(50%);
+}
+
+/* about */
+.about {
+  background: url("../../images/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+  text-align: center;
+}
+.about::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.90);
+}
+.content {
+  padding-top: 45px;
+}
+.content .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Contacts */
+.contact-info {
+  text-align: center;
+  margin: auto;
+}
+.contact-icon {
+  padding: 50px 25px 50px 25px;
+  color:  #007bff;
+}
+.contact-info h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color:  #007bff;
+}
+.phoneNumber {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.feedback {
+  margin: auto;
+  max-width: 80%;
+}
+/* Footer */
+.footer {
+  padding: 30px;
+  background-color: #343a40;
+  color: #ddd;
+  font-size: 13px;
+}
+
+.footer-info p {
+  padding: 5px;
+  border-top: 1px solid #007bff;
+  text-align: justify;
+  font-size: 14px;
+}
+.copyright {
+  text-align: center;
+  border-top: 1px solid #007bff;
+  letter-spacing: 0.1em;
+}
+.head-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer-top .social-links a {
+  font-size: 15px;
+  display: inline-block;
+  background: #007bff;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 33px;
+  height: 33px;
+  transition: 0.3s;
+}
